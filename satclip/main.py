@@ -3,10 +3,10 @@ from pathlib import Path
 
 import lightning.pytorch
 import torch
-from datamodules.s2geo_dataset import S2GeoDataModule
+from .datamodules.s2geo_dataset import S2GeoDataModule
 from lightning.pytorch.cli import LightningCLI
-from loss import SatCLIPLoss
-from model import SatCLIP
+from .loss import SatCLIPLoss
+from .model import SatCLIP
 
 torch.set_float32_matmul_precision('high')
 
